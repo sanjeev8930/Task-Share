@@ -1,367 +1,510 @@
 <!DOCTYPE html>
 <html lang="en">
+<head style="height:100vh">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BS-5</title>
+    <script async="" src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Assignment Start</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <noscript><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" as="style" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"></noscript>
+    
+    <script async="" src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <noscript>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    </noscript>
 
 </head>
-
 <body>
-
-  <!-- ASIDE CODE START -->
-  <aside class="mainNavigation">
-    <div class="mainNavigation__top">
-      <div class="DeviceNav">
-        <a href="#" class="mainNavigation__top__logo"><span
-            class="material-icons mainNavigation__top__logo__color">donut_small</span> Veritas</a>
-        <span class="material-icons text-danger cp d-lg-none">close</span>
-      </div>
-      <div class="mainNavigation__top__mainMenu">
-        <div class="mainNavigation__top__mainMenu__title pl-2">Main menu</div>
-        <nav class="nav flex-column mainNavigation__top__mainMenu__items pt-3">
-          <a class="nav-link active" href="#"><span class="material-icons mr-2">dashboard_customize</span> Dashboard</a>
-          <a class="nav-link" href="#"><span class="material-icons mr-2">people</span> Users</a>
-          <a class="nav-link" href="#"><span class="material-icons mr-2">account_box</span> Accounts</a>
-          <a class="nav-link" href="#"><span class="material-icons mr-2">equalizer</span> Statistics</a>
-        </nav>
-      </div>
-
-      <div class="mainNavigation__top__mainMenu">
-        <div class="mainNavigation__top__mainMenu__title pl-2">Teams</div>
-        <nav class="nav flex-column mainNavigation__top__mainMenu__items--navTwo pt-3 pl-2">
-          <a class="nav-link animateX" href="#"><span class="dot bg-warning mr-2"></span> Marketing</a>
-          <a class="nav-link animateX" href="#"><span class="dot bg-info mr-2"></span> Development</a>
-
-        </nav>
-      </div>
-
-    </div>
-    <div class="mainNavigation__bottom">
-      <div class="mainNavigation__top__mainMenu mt-0">
-
-        <nav
-          class="nav flex-column mainNavigation__top__mainMenu__items--navTwo mainNavigation__top__mainMenu__items--navThree pt-4 pl-2">
-          <a class="nav-link animateX" href="#"><span class="material-icons mr-2">settings</span> Settings</a>
-          <a class="nav-link animateX" href="#"><span class="material-icons mr-2">logout</span> Log Out</a>
-
-        </nav>
-      </div>
-    </div>
-  </aside>
-  <!-- ASIDE CODE END-->
-
-  <!-- MAIN CODE START -->
-  <main>
-
-    <!-- HEADER CODE START -->
-    <header>
-      <div class="analytics">
-        <h1 class="analytics__title mb-3 mb-lg-0"><span class="material-icons d-lg-none text-white"
-            id="humbergerMenu">menu</span> Sanjeev</h1>
-        <div class="nav nav-pills analytics__tabs" role="tablist">
-          <button class="nav-link" id="nav-home-tab" data-toggle="tab" data-target="#FullStatistics" type="button"
-            role="tab" aria-controls="FullStatistics" aria-selected="true">Full Statistics</button>
-          <button class="nav-link active" id="nav-profile-tab" data-toggle="tab" data-target="#ResultSummary" type="button"
-            role="tab" aria-controls="ResultSummary" aria-selected="false">Result Summary</button>
-
-        </div>
-      </div>
-      <div class="profile">
-        <ul class="nav align-items-center">
-          <li class="nav-item mr-3">
-            <a class="nav-link profile__addmore" href="#"><span class="material-icons">add</span></a>
-          </li>
-          <li class="nav-item dropdown dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><img
-              data-toggle="collapse" class="cp img-fluid" src="images/user.png" width="40" height="40"
-              alt="Profile Picture">
-            <span class="sr-only">Toggle Dropdown</span>
-            <div class="dropdown-menu dropdown-menu-sm-right">
-              <a class="dropdown-item" href="#"><span class="material-icons mr-2">people</span> User Name</a>
-              <a class="dropdown-item" href="#"><span class="material-icons mr-2">face_5</span> Profile</a>
-              <a class="dropdown-item" href="#"><span class="material-icons mr-2">settings</span> Setting</a>
-              <a class="dropdown-item" href="#"><span class="material-icons mr-2">vpn_key_off</span>Change Password</a>
-              <div class="dropdown-divider my-0"></div>
-              <a class="dropdown-item text-danger" href="#"><span class="material-icons mr-2">logout</span> Sign Out</a>
+    <section class="w-50 mx-auto p-2 my-4 border rounded bg-light position-relative shadow">
+        <h1 class="h5 text-center text-uppercase bg-secondary-subtle py-2">css Curl effect</h1>
+        <hr>
+        <div class="card bg-black py-5 col-md-4 offset-md-4 rounded-0">
+            <div class="card-body py-5">
+                <div class="curlEffect position-absolute end-0 bottom-0"></div>
             </div>
-          </li>
-
-        </UL>
-      </div>
-    </header>
-    <!-- HEADER CODE END -->
-
-    <!-- WORKAREA CODE START -->
-    <section class="workarea tab-content mt-5">
-      <div id="FullStatistics" class="tab-pane fade">
-      <div class="graphicInfo">
-        <div class="graphicInfo__child graphicInfo__teamPayment">
-          <div>
-            <h2 class="graphicInfo__teamPayment__title">Team <br>Payments <span
-                class="material-icons text-body">notifications</span></h2>
-            <p class="graphicInfo__teamPayment__date mt-3"><span
-                class="material-icons text-primary mr-2">calendar_month</span> 07 Dec approval</p>
-          </div>
-          <ul class="list-inline graphicInfo__teamPayment__users mb-0">
-            <li><img class="rounded-circle" src="images/user.png" width="40" height="40" alt="User Picture"></li>
-            <li><img class="rounded-circle" src="images/user-pic.jpg" width="40" height="40" alt="User Picture"></li>
-            <li><img class="rounded-circle" src="images/user.png" width="40" height="40" alt="User Picture"></li>
-            <li>25+</li>
-
-          </ul>
         </div>
-        <div class="graphicInfo__child graphicInfo__saving">
-          <h2 class="graphicInfo__teamPayment__title justify-content-start align-items-center mb-0"><img class="mr-2"
-              src="images/saving_img.png" width="40" height="40" alt="Savings Diagram"> Savings</h2>
-          
-              <canvas id="myChartline"></canvas>
 
-          <div class="h3 font-weight-bold">$5,839</div>
-          <div class="d-flex align-items-center"><span class="text-danger d-flex mr-2"><span
-                class="material-icons">trending_down</span> -11%</span> <span class="lw">Last week</span> <a href="#"
-              class="material-icons ml-auto text-white graphicInfo__saving__goBtn position-relative rounded-pill text-decoration-none animateX">
-              east </a></div>
-        </div>
-        <div class="graphicInfo__child border-0 graphicInfo__incomeStatistics bg-white">
-          <h2 class="graphicInfo__teamPayment__title">Income Statistics</h2>
-          <div class="chips_success rounded-pill px-2 mb-1">+8%</div>
-          
-          <!-- <div class="d-block"><img src="images/barChart.png" class="bar__charts" alt="Bar Chart"></div> -->
-          <canvas id="myChart"></canvas>
-
-
-        </div>
-        <div class="graphicInfo__child graphicInfo__bestPlane p-0 position-relative">
-          <div class="card">
-            <div class="card-header graphicInfo__bestPlane__header pt-4">
-              <div class="graphicInfo__bestPlane__header__price d-flex justify-content-between align-items-start">$95.9
-                <span class=""><img src="images/star.png" width="15" height="16" alt="star"></span></div>
-              <div class="graphicInfo__bestPlane__header__month">Per Month</div>
-              <div class="graphicInfo__bestPlane__header__bestPlane">Choose Best Plan For You!</div>
-            </div>
-            <div class="card-body d-flex align-items-center justify-content-between">
-              <div class="graphicInfo__bestPlane__header__details">Details</div>
-              <button type="button"
-                class="btn rounded-pill graphicInfo__bestPlane__header__upgrade px-4">Upgade</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <!-- PAYMENT CODE START -->
-    <section class="recentlyPayment">
-      <h3 class="recentlyPayment__title mb-3">Recently Payments</h3>
-      <div class="row">
-        <div class="col-lg-6 mb-2">
-          <div class="card card-body border-0 recentlyPayment__box">
-
-            <div>
-              <div class="media align-items-center">
-                <img class="recentlyPayment__profilePic mr-2" src="images/user-pic.jpg" width="40" height="40"
-                  alt="User Picture">
-                <div class="media-body">
-                  <h4 class="recentlyPayment__username mb-1">Emma Ryan Jr.</h4>
-                  <p class="recentlyPayment__date mb-0">Mar 9, 2023</p>
-                </div>
-              </div>
-            </div>
-            <div class="recentlyPayment__cost">$4,823</div>
-            <div class="chips_success rounded-pill">Done</div>
-            <div class="recentlyPayment__more cp dropdown dropup" aria-expanded="false" data-toggle="dropdown"><span
-                class="material-icons"> more_horiz </span>
-              <div class="dropdown-menu dropdown-menu-right">
-                <a class="dropdown-item" href="#">Payment 01</a>
-                <a class="dropdown-item" href="#">Payment 02</a>
-                <a class="dropdown-item" href="#">Payment 03</a>
-              </div>
-            </div>
-
-          </div>
-        </div>
-        <div class="col-lg-6 mb-2">
-          <div class="card card-body border-0 recentlyPayment__box">
-
-
-            <div class="media align-items-center">
-              <img class="recentlyPayment__profilePic mr-2" src="images/user-pic.jpg" width="40" height="40"
-                alt="User Picture">
-              <div class="media-body">
-                <h4 class="recentlyPayment__username mb-1">Justem Webnor </h4>
-                <p class="recentlyPayment__date mb-0">Mar 2, 2023</p>
-              </div>
-            </div>
-
-            <div class="recentlyPayment__cost">$2,520</div>
-            <div class="chips_success chips_success--pending rounded-pill">Pending</div>
-            <div class="recentlyPayment__more cp dropdown dropup" aria-expanded="false" data-toggle="dropdown"><span
-                class="material-icons"> more_horiz </span>
-              <div class="dropdown-menu dropdown-menu-right">
-                <a class="dropdown-item" href="#">Payment 01</a>
-                <a class="dropdown-item" href="#">Payment 02</a>
-                <a class="dropdown-item" href="#">Payment 03</a>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- PAYMENT CODE END -->
-
-    <!-- TRANSACTIONS CODE START -->
-    <section class="mt-3 transaction">
-      <div class="transaction__searchPanel">
-        <h5 class="recentlyPayment__title mr-3">Transactions</h5>
-        <div class="input-group mb-3 transaction__inputGroup">
-          <div class="input-group-prepend">
-            <span class="material-icons input-group-text transaction__search pr-1 border-0">
-              search
-            </span>
-          </div>
-          <input type="search" class="form-control transaction__formControl border-0 pl-1" placeholder="Search"
-            aria-label="Username" aria-describedby="searchfilter">
-        </div>
-      </div>
-      <div class="table-responsive transaction__dataPanel">
-        <table class="table table-hover">
-          <thead>
-            <tr>
-              <th scope="col" class="border-bottom-0">Reciever</th>
-              <th scope="col" class="border-bottom-0">Type</th>
-              <th scope="col" class="border-bottom-0">Status</th>
-              <th scope="col" class="border-bottom-0">Date</th>
-              <th scope="col" class="border-bottom-0">Amount</th>
-              <th scope="col" class="border-bottom-0">&nbsp;</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">
-                <div class="media align-items-center">
-                  <div class="custom-control custom-checkbox transaction__dataPanel__checkbox">
-                    <input type="checkbox" class="custom-control-input" id="customCheck1">
-                    <label class="custom-control-label" for="customCheck1">&nbsp;</label>
-                  </div>
-                  <img class="recentlyPayment__profilePic mr-2" src="images/user-pic.jpg" width="40" height="40"
-                    alt="User Picture">
-                  <div class="media-body">
-                    <h4 class="recentlyPayment__username mb-1">Emma Ryan Jr.</h4>
-                  </div>
-                </div>
-              </th>
-              <td>Salary</td>
-              <td>
-                <div class="chips_success chips_success--pending rounded-pill">Pending</div>
-              </td>
-              <td class="recentlyPayment__dateTime">Feb 19th, 2023</td>
-              <td>
-                <div class="recentlyPayment__cost">$4,823</div>
-              </td>
-              <td><button type="button" class="btn btn-outline-secondary btn-sm btn_details">Details</button></td>
-            </tr>
-
-            <tr>
-              <th scope="row">
-                <div class="media align-items-center">
-                  <div class="custom-control custom-checkbox transaction__dataPanel__checkbox">
-                    <input type="checkbox" class="custom-control-input" id="customCheck2">
-                    <label class="custom-control-label" for="customCheck2">&nbsp;</label>
-                  </div>
-                  <img class="recentlyPayment__profilePic mr-2" src="images/user-pic.jpg" width="40" height="40"
-                    alt="User Picture">
-                  <div class="media-body">
-                    <h4 class="recentlyPayment__username mb-1">Emma Ryan Jr.</h4>
-                  </div>
-                </div>
-              </th>
-              <td>Bonus</td>
-              <td>
-                <div class="chips_success chips_success rounded-pill">Done</div>
-              </td>
-              <td class="recentlyPayment__dateTime">Feb 19th, 2023</td>
-              <td>
-                <div class="recentlyPayment__cost">$4,823</div>
-              </td>
-              <td><button type="button" class="btn btn-outline-secondary btn-sm btn_details">Details</button></td>
-            </tr>
-
-            <tr>
-              <th scope="row">
-                <div class="media align-items-center">
-                  <div class="custom-control custom-checkbox transaction__dataPanel__checkbox">
-                    <input type="checkbox" class="custom-control-input" id="customCheck3">
-                    <label class="custom-control-label" for="customCheck3">&nbsp;</label>
-                  </div>
-                  <img class="recentlyPayment__profilePic mr-2" src="images/user-pic.jpg" width="40" height="40"
-                    alt="User Picture">
-                  <div class="media-body">
-                    <h4 class="recentlyPayment__username mb-1">Emma Ryan Jr.</h4>
-                  </div>
-                </div>
-              </th>
-              <td>Salary</td>
-              <td>
-                <div class="chips_success chips_success rounded-pill">Done</div>
-              </td>
-              <td class="recentlyPayment__dateTime">Feb 19th, 2023</td>
-              <td>
-                <div class="recentlyPayment__cost">$4,823</div>
-              </td>
-              <td><button type="button" class="btn btn-outline-secondary btn-sm btn_details">Details</button></td>
-            </tr>
-
-          </tbody>
-        </table>
-      </div>
-    </section>
-    <!-- TRANSACTIONS CODE START -->
-    </div>
-
-<!-- ResultSummary data start -->
-    <div id="ResultSummary" class="tab-pane fade show active">
-      <div class="">
-        <h5 class="text-center">Get Information here</h5>
-       
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSesm5J7HvTYrSOYFEEXES7S4Osx5_KzpkELAJWQVs4hSYLQ_g/viewform?embedded=true" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-      </div>
-    </div>
-    <!-- ResultSummary data End -->
+        <style>
+           .curlEffect{width: 30px; height: 30px; background :linear-gradient(-45deg, #fff, #f3f3f3 45%, #ddd 50%,#aaa 50%,	#bbb 56%, 
+			#ccc 62%, #f3f3f3 80%,#fff 100%); box-shadow : 0 0 6px rgba(0, 0, 0, .5); transition: all 0.6s ease;}
+        .card.bg-black:hover .curlEffect{width: 60px; height: 60px;}
+        </style>
 
     </section>
-    <!-- WORKAREA CODE END -->
-  
-  </main>
-  <!-- MAIN CODE END-->
+
+    <section class="w-50 mx-auto p-2 my-4 border rounded bg-light position-relative shadow">
+        <h1 class="h5 text-center text-uppercase bg-secondary-subtle py-2">Perspective 3D effect</h1>
+        <hr>
+        <div class="card perspective bg-secondary-subtle">
+            <div class="card-body perspective_rotate">
+                <img class="img-fluid object-fit-cover"
+                     src="images/img01.jpg" width="600" height="338" alt="">
+                <div class="p-2 text-bg-info position-absolute w-100 h-100 top-0 start-0 perspectiveContentfront">
+                    Lorem ipsum dolor
+                    sit amet consectetur adipisicing elit. Repudiandae molestias similique expedita, magni a provident sapiente
+                    porro inventore eos sed cumque ipsam repellat ratione at odit consectetur assumenda iusto quam.
+                </div>
+            </div>
+        </div>
+
+        <style>
+            .perspective {
+                perspective: 1000px;
+                width: 300px;
+            }
+
+            .perspective_rotate {
+                transform-style: preserve-3d;
+                transition: all 1s ease;
+            }
+
+            .perspective:hover .perspective_rotate {
+                transform: rotateY(180deg);
+            }
+
+            .perspectiveContentfront {
+                transform: rotateY(180deg);
+                backface-visibility: hidden;
+            }
+        </style>
+
+    </section>
+
+    <section class="w-50 mx-auto p-2 my-4 border rounded bg-light position-relative shadow">
+        <h1 class="h5 text-center text-uppercase bg-secondary-subtle py-2">Pure CSS Alert</h1>
+        <hr>
+        <div class="alert alert-success">
+            <button type="button" class="btn-close float-end" onclick="this.parentElement.style.display='none'" aria-label="closed"></button>
+            Lorem ipsum dolor sit amet.
+        </div>
+
+    </section>
+
+    <section class="container w-50 mx-auto border shadow pb-5">
+        <h1 class="h5 text-center text-uppercase bg-secondary-subtle py-2">Pure CSS marquee Style @Hover Stop!</h1>
+        <hr>
+
+        <section class="d-flex overflow-x-hidden AnimationStart gap-2">
+            <div class="d-flex gap-2">
+                <span class="badge bg-primary px-5 rounded-pill">Scroll 01</span>
+                <span class="badge bg-secondary px-5 rounded-pill">Scroll 02</span>
+                <span class="badge bg-info px-5 rounded-pill">Scroll 03</span>
+                <span class="badge bg-warning px-5 rounded-pill">Scroll 04</span>
+                <span class="badge bg-danger px-5 rounded-pill">Scroll 05</span>
+                <span class="badge bg-dark px-5 rounded-pill">Scroll 06</span>
+                <span class="badge text-bg-light px-5 rounded-pill border">Scroll 07</span>
+                <span class="badge bg-primary px-5 rounded-pill">Scroll 08</span>
+                <span class="badge bg-secondary px-5 rounded-pill">Scroll 09</span>
+                <span class="badge bg-info px-5 rounded-pill">Scroll 10</span>
+                <span class="badge bg-warning px-5 rounded-pill">Scroll 11</span>
+                <span class="badge bg-danger px-5 rounded-pill">Scroll 12</span>
+                <span class="badge bg-dark px-5 rounded-pill">Scroll 13</span>
+                <span class="badge text-bg-light px-5 rounded-pill border">Scroll 14</span>
+                <span class="badge bg-primary px-5 rounded-pill">Scroll 15</span>
+                <span class="badge bg-secondary px-5 rounded-pill">Scroll 16</span>
+                <span class="badge bg-info px-5 rounded-pill">Scroll 17</span>
+                <span class="badge bg-warning px-5 rounded-pill">Scroll 18</span>
+                <span class="badge bg-danger px-5 rounded-pill">Scroll 19</span>
+                <span class="badge bg-dark px-5 rounded-pill">Scroll 20</span>
+                <span class="badge text-bg-light px-5 rounded-pill border">Scroll 21</span>
+                <span class="badge bg-primary px-5 rounded-pill">Scroll 22</span>
+                <span class="badge bg-secondary px-5 rounded-pill">Scroll 23</span>
+                <span class="badge bg-info px-5 rounded-pill">Scroll 24</span>
+                <span class="badge bg-warning px-5 rounded-pill">Scroll 25</span>
+                <span class="badge bg-danger px-5 rounded-pill">Scroll 26</span>
+                <span class="badge bg-dark px-5 rounded-pill">Scroll 27</span>
+                <span class="badge text-bg-light px-5 rounded-pill border">Scroll 28</span>
+            </div>
+        </section>
+
+        <style>
+            .AnimationStart {
+                mask-image: linear-gradient(90deg, transparent, #fff, 90%, transparent);
+            }
+
+                .AnimationStart > div {
+                    animation: scroll 30s linear infinite;
+                }
+
+                    .AnimationStart > div:hover {
+                        animation-play-state: paused;
+                        cursor: grab;
+                    }
+
+            @keyframes scroll {
+                0% {
+                    transform: translateX(10%);
+                }
+
+                100% {
+                    transform: translateX(-100%);
+                }
+            }
+        </style>
+
+    </section>
+
+    <div class="container w-50 border my-4 rounded position-sticky top-0 shadow bg-white z-1 text-center">
+        <strong>HEADER LOAD BY JQUERY!</strong> &nbsp; <span class="badge bg-info">(It will work start after load the file at Server)</span>
+        <div id="div1" class="py-2 border my-3 rounded"></div>
+        <script>
+            $(document).ready(function () {
+                $("#div1").load("header.html");
+            });
+        </script>
+    </div>
+
+    <section class="container w-50 mx-auto border shadow pb-5 mb-3">
+        <h1 class="h5 text-center text-uppercase bg-secondary-subtle py-2">Pure CSS @Starting Style</h1>
+        <hr>
+
+        <div class="row row-cols-md-3 mx-3">
+            <div class="col-12 SlideDown">
+                <div class="border rounded p-3 bg-info">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quidem consectetur doloremque itaque, modi dolore sed quaerat reiciendis minus sint aperiam nisi! Labore reprehenderit doloremque dolorum at neque eligendi placeat?
+                </div>
+            </div>
+
+            <div class="col-12 SlideDown1">
+                <div class="border rounded p-3 text-bg-secondary">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quidem consectetur doloremque itaque, modi dolore sed quaerat reiciendis minus sint aperiam nisi! Labore reprehenderit doloremque dolorum at neque eligendi placeat?
+                </div>
+            </div>
+
+            <div class="col-12 SlideDown2">
+                <div class="border rounded p-3 text-bg-primary">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quidem consectetur doloremque itaque, modi dolore sed quaerat reiciendis minus sint aperiam nisi! Labore reprehenderit doloremque dolorum at neque eligendi placeat?
+                </div>
+            </div>
+        </div>
+
+        <style>
+            .SlideDown {
+                transition: all 1s ease 0.3s;
+
+                @starting-style {
+                    opacity: 0;
+                    transform: translateX(-100%)
+                }
+            }
+
+            .SlideDown1 {
+                transition: all 1s ease 0.3s;
+
+                @starting-style {
+                    opacity: 0;
+                    transform: translateY(20%)
+                }
+            }
+
+            .SlideDown2 {
+                transition: all 1s ease 0.3s;
+
+                @starting-style {
+                    opacity: 0;
+                    transform: translateX(100%)
+                }
+            }
+        </style>
+
+    </section>
+
+    <section class="container w-50 mx-auto border shadow pb-5">
+        <h1 class="h5 text-center text-uppercase bg-secondary-subtle py-2">View @ Animation</h1>
+        <hr>
+
+        <div class="row row-cols-md-3 mx-3">
+            <div class="col-12 scrollAnimations">
+                <div class="border rounded p-3 bg-info">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quidem consectetur doloremque itaque, modi dolore sed quaerat reiciendis minus sint aperiam nisi! Labore reprehenderit doloremque dolorum at neque eligendi placeat?
+                </div>
+            </div>
+
+            <div class="col-12 scrollAnimations" style="animation-range-end: 20%;">
+                <div class="border rounded p-3 text-bg-secondary">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quidem consectetur doloremque itaque, modi dolore sed quaerat reiciendis minus sint aperiam nisi! Labore reprehenderit doloremque dolorum at neque eligendi placeat?
+                </div>
+            </div>
+
+            <div class="col-12 scrollAnimations" style="animation-range-end: 25%;">
+                <div class="border rounded p-3 text-bg-primary">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quidem consectetur doloremque itaque, modi dolore sed quaerat reiciendis minus sint aperiam nisi! Labore reprehenderit doloremque dolorum at neque eligendi placeat?
+                </div>
+            </div>
+        </div>
+
+        <style>
+            .scrollAnimations {
+                animation: scrollAnimations linear forwards;
+                animation-timeline: view();
+                animation-range-start: 0;
+                animation-range-end: 15%;
+            }
+
+            @keyframes scrollAnimations {
+                0% {
+                    transform: translateX(100%);
+                    opacity: 0;
+                }
+
+                100% {
+                    transform: translateX(0);
+                    opacity: 1;
+                }
+            }
+        </style>
+
+    </section>
+
+    <section class="w-50 mx-auto p-2 my-4 border rounded bg-light position-relative shadow">
+        <h1 class="h5 text-center text-uppercase bg-secondary-subtle py-2">Pure CSS Hover Navigation</h1>
+        <hr>
+        <ul class="nav gap-1 Multi__Dropdown position-relative w-75">
+            <li class="nav-item bg-primary rounded">
+                <a href="#" class="nav-link dropdown-toggle text-white">Item 01</a>
+                <ul class="nav position-absolute bg-primary-subtle rounded z-1 p-2">
+                    <li class="nav-item"><a href="nav-link"> Sub-Item 01</a> </li>
+                    <li class="nav-item"><a href="nav-link"> Sub-Item 01</a> </li>
+                    <li class="nav-item"><a href="nav-link"> Sub-Item 01</a> </li>
+                    <li class="nav-item"><a href="nav-link"> Sub-Item 01</a> </li>
+                </ul>
+            </li>
+            <li class="nav-item bg-primary rounded"><a href="#" class="nav-link text-white">Item 01</a></li>
+            <li class="nav-item bg-primary rounded">
+                <a href="#" class="nav-link dropdown-toggle text-white">Item 01</a>
+                <ul class="nav position-absolute bg-primary-subtle rounded z-1 p-2">
+                    <li class="nav-item"><a href="nav-link"> Sub- Sub-Item 01</a> </li>
+                    <li class="nav-item"><a href="nav-link"> Sub- Sub-Item 01</a> </li>
+                    <li class="nav-item"><a href="nav-link"> Sub- Sub-Item 01</a> </li>
+                    <li class="nav-item"><a href="nav-link"> Sub- Sub-Item 01</a> </li>
+                </ul>
+            </li>
+            <li class="nav-item bg-primary rounded"><a href="#" class="nav-link text-white">Item 01</a></li>
+        </ul>
+
+        <style>
+
+            .Multi__Dropdown ul {
+                visibility: hidden;
+                opacity: 0;
+                transition: all 0.6s ease-in-out;
+                left: 0;
+                overflow: hidden;
+                display: flex;
+                flex-direction: column;
+                width: 380px;
+            }
+
+            .nav-item:hover ul {
+                visibility: visible;
+                opacity: 1;
+                overflow: initial;
+            }
+        </style>
+
+    </section>
+
+    <section class="w-50 mx-auto p-2 my-4 border rounded text-center bg-light position-relative shadow">
+        <h1 class="h5 text-center text-uppercase bg-secondary-subtle py-2">Pure CSS PopOver</h1>
+        <hr>
+        <div class="text-center position-relative d-inline-block me-5">
+            <input type="checkbox" id="Pop-Over" class="btn-check">
+            <label class="btn btn-outline-primary" for="Pop-Over" aria-label="closed">Click Pop-Over</label>
+
+            <div class="Pop-Over border bg-secondary-subtle rounded p-3 position-absolute start-50 bottom-100 z-2 translate-middle-x shadow">
+                <button class="btn-close float-end" id="end"></button>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quia odio quo perspiciatis temporibus ea, iste aspernatur commodi culpa a totam non voluptas dolor tempore deserunt minima eum consequuntur? In?</p>
+
+            </div>
+            <script>
+                $('#end').click(function () {
+                    $("#Pop-Over").prop('checked', false);
+                });
+            </script>
+            <style>
+                .Pop-Over {
+                    visibility: hidden;
+                    width: 400px;
+                    opacity: 0;
+                    transition: 0.4s;
+                }
+
+                .btn-check:checked + label + .Pop-Over {
+                    visibility: visible;
+                    opacity: 1;
+                }
+            </style>
+        </div>
+
+        <div class="d-inline-block hoverPopup__main position-relative">
+            <button class="btn btn-primary" id="end">Hover Pop-up</button>
+
+            <div class="border p-2 shadow rounded hoverPopup text-bg-secondary position-absolute invisible">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quia odio quo perspiciatis temporibus ea, deserunt minima eum consequuntur? In?
+                <div class="placeholder-glow ">
+                    <span class="placeholder col-12 py-5 bg-info"></span>
+                </div>
+                <p class="placeholder-glow">
+
+                    <span class="placeholder col-4"></span>&star;
+                    <span class="placeholder col-4"></span>&starf;
+                    <span class="placeholder col-12"></span>
+                    <button class="btn placeholder bg-info px-5">&nbsp;</button>
+                </p>
+
+            </div>
+        </div>
+        <style>
+            .hoverPopup {
+                width: 400px;
+                opacity: 0;
+                transition: 0.4s;
+                left: calc(50% - 200px);
+                bottom: 0;
+            }
+
+            .hoverPopup__main:hover .hoverPopup {
+                visibility: visible !important;
+                opacity: 1;
+                bottom: 120%;
+            }
+        </style>
 
 
+    </section>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <section class="w-50 mx-auto p-2 my-4 border rounded bg-light position-relative shadow" id="accordionhtml5">
+        <h1 class="h5 text-center text-uppercase bg-secondary-subtle py-2">Pure CSS Accordion</h1>
+        <hr>
+        <details class="mb-3" name="accordionhtml5">
+            <summary class="py-2 bg-primary-subtle px-3 rounded position-relative">Accordion 01</summary>
+            <p class="p-2">Item 01 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, non voluptate provident eveniet, vitae consectetur in id inventore modi commodi facilis, molestiae sequi dolores quaerat soluta odio iure minima hic.</p>
+        </details>
+        <details class="mb-3" name="accordionhtml5">
+            <summary class="py-2 bg-primary-subtle px-3 rounded position-relative">Accordion 02</summary>
+            <p class="p-2">Item 02 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, non voluptate provident eveniet, vitae consectetur in id inventore modi commodi facilis, molestiae sequi dolores quaerat soluta odio iure minima hic.</p>
+        </details>
+        <details class="mb-3" name="accordionhtml5">
+            <summary class="py-2 bg-primary-subtle px-3 rounded position-relative">Accordion 03</summary>
+            <p class="p-2">Item 03 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, non voluptate provident eveniet, vitae consectetur in id inventore modi commodi facilis, molestiae sequi dolores quaerat soluta odio iure minima hic.</p>
+        </details>
+        <style>
+            summary::marker {
+                content: ' ';
+            }
 
-  <script src="js/chartConfig.js"></script>
+            summary::before {
+                content: '+';
+                position: absolute;
+                right: 14px;
+                top: -6px;
+                font-size: 30px;
+            }
 
-  <script>
-    $(document).ready(function () {
-      $(".mainNavigation__top__mainMenu__items .nav-link").click(function () {
-        $(this).addClass("active").siblings().removeClass("active");
+            details[open] summary::before {
+                content: '-';
+                position: absolute;
+                right: 14px;
+                top: -23px;
+                font-size: 50px;
+            }
+        </style>
 
-      });
-      $("#humbergerMenu,.DeviceNav span").click(function () {
-        $("aside").toggleClass("humbergerMenuClass");
-      });
-      
-    });
+    </section>
 
-    </script>
+    <section class="w-50 mx-auto p-2 my-4 border rounded bg-light position-relative shadow">
+        <h1 class="h5 text-center text-uppercase bg-secondary-subtle py-2">Pure CSS Tab</h1>
+        <hr>
+
+        <div id="Mytabs">
+            <input type="radio" name="aa" id="qq" class="d-none" checked>
+            <label for="qq" class="border py-1 px-3 mb-2 rounded text-uppercase text-primary fw-semibold text-center">tab-01</label>
+            <p class="bg-secondary-subtle p-2 rounded">One Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+            <input type="radio" name="aa" id="ww" class="d-none">
+            <label for="ww" class="border py-1 px-3 mb-2 rounded text-uppercase text-primary fw-semibold text-center">tab-01</label>
+            <p class="bg-primary-subtle p-2 rounded">Two Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate blanditiis facilis incidunt illum veniam delectus consequatur minima dicta ?</p>
+
+            <input type="radio" name="aa" id="ee" class="d-none">
+            <label for="ee" class="border py-1 px-3 mb-2 rounded text-uppercase text-primary fw-semibold text-center">tab-01</label>
+            <p class="bg-info-subtle p-2 rounded">Three Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate blanditiis facilis incidunt illum veniam delectus consequatur minima dicta placeat? Dolores culpa harum debitis aspernatur nam asperiores et vel delectus alias?</p>
+
+        </div>
+
+        <style>
+            #Mytabs {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                gap: 5px;
+            }
+
+                #Mytabs label {
+                    cursor: pointer;
+                    order: 1;
+                    flex: 1 1 auto
+                }
+
+                #Mytabs input:checked + label {
+                    border-bottom: 2px dashed red !important;
+                }
+
+                #Mytabs p {
+                    order: 99;
+                    display: none;
+                }
+
+            input:checked + label + p {
+                display: block !important;
+                width: 100%;
+                transition: all .6s ease;
+
+                @starting-style {
+                    opacity: 0;
+                    transform: translateY(-10%)
+                }
+            }
+        </style>
+    </section>
+
+    <section class="w-50 mx-auto p-2 my-4 border rounded bg-light position-relative shadow">
+        <h1 class="h5 text-center text-uppercase bg-secondary-subtle py-2">Pure CSS Modal</h1>
+        <hr>
+        <div class="text-center"><a href="#cssModal" class="btn btn-outline-primary">Pure CSS Modal</a></div>
+
+        <p class="pt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quia odio quo perspiciatis temporibus ea, iste aspernatur commodi culpa a totam non voluptas dolor tempore deserunt minima eum consequuntur? In?</p>
+        <div class="position-fixed start-0 top-0 h-100 w-100 cssModal" id="cssModal">
+            <div class="border border-4 border-secondary-subtle bg-white position-absolute start-50 top-50 translate-middle p-4 rounded-4">
+                <a href="#" class="display-6 p-0 m-0 text-decoration-none position-absolute top-0 start-100 translate-middle rounded bg-white">&times;</a>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quia odio quo perspiciatis temporibus ea, iste aspernatur commodi culpa a totam non voluptas dolor tempore deserunt minima eum consequuntur? In?
+            </div>
+            <a href="#" class="position-fixed w-100 h-100 start-0 top-0 z-n1"></a>
+        </div>
+
+        <style>
+            .cssModal {
+                opacity: 0;
+                visibility: hidden;
+                background-color: rgba(0,0,0,0.5);
+                transition: all 0.2s ease;
+            }
+
+                .cssModal:target {
+                    opacity: 1;
+                    visibility: visible;
+                    transition: all 0.4s ease;
+                }
+
+                .cssModal > div {
+                    width: min(90%, 400px);
+                }
+
+            :has(:target) {
+                overflow: hidden;
+            }
+        </style>
+    </section>
 
 </body>
-
-</html>
+ </html>
